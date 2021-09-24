@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Vue binding</title>
+  <link rel="stylesheet" href="style.css">
+  <script src ="vue.js"></script>
+</head>
+
+<body>
+  
+<div id="ass">
+  <div class="nav">
+    <h1>EVENTS</h1>
+  </div>
+   <div class="main">
+    <h1>EVENTS PRACTICE</h1><br>
+     <hr></hr>
+    <button v-on:click="show()">Show Alert</button><br>
+       <input class ="input"type="text" v-on:keydown="down"/>
+      <p class="output"> Output: {{name1}}</p>
+       
+   <input class="input"type = "text" v-on:keyup.enter="enter"/>
+    <p class="output"> Output: {{name2}}</p>
+    
+   </div>   
+  </div>
+  
+  <!-- Project -->
+  <script src="app.js"></script>
+</body>
+</html>
+
